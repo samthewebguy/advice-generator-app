@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(217, 12%, 63%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: hsl(218, 23%, 16%);
+    padding: 40px 16px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 2.5rem;
+    letter-spacing: -0.025px;
+    line-height: 1.25;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 8px;
+}
+
+.header #serif-style{
+    font-family: "Instrument Serif", serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    line-height: 1.25;
+    font-weight: 400;
+    color: hsl(150, 100%, 66%);
+}
+
+.header p{
+    font-size: 1rem;
+    letter-spacing: 0px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: hsl(193, 38%, 86%);
+}
+
+/* Container */
+
+
+.container{
+    position: relative;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 15px;
+    padding: 24px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Advice Box */
+
+.container .advice-box{
+    margin-bottom: 40px;
+}
+
+.container .advice-box h2{
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: hsl(150, 100%, 66%);
+    margin-bottom: 16px;
+}
+
+.container .advice-box #advice-text{
+    font-size: 1.25rem;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: hsl(193, 38%, 86%);
+    margin-bottom: 16px;
+}
+
+/* Divder */
+
+.container .divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.container .divider-desktop {
+    width: fit-content;
+}
+
+.container .divider-mobile {
+    display: none;
+}
+
+/* Button */
+
+.container .button{
+    position: absolute;
+    bottom: -30px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Footer */
+
+.footer{
+    background-color: hsl(150, 100%, 66%);
+    color: hsl(218, 23%, 16%);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 16px 16px;
+}
+
+.footer .attribution {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+.footer .attribution a {
+    color: hsl(218, 23%, 16%);
+}
+
+/* Media Query */
+
+@media (max-width: 768px) {
+
+    .header h1{
+    font-size: 1.75rem;
+}
+
+    .container{
+        padding: 16px;
+    }
+
+    .container .divider-desktop {
+        display: none;
+    }
+
+    .container .divider-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+}

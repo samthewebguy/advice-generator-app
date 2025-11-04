@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="keywords" content="advice, advice generator, random advice, advice slip api, frontend mentor challenge">
+  <meta name="description" content="Advice generator app that fetches random advice from the Advice Slip API.">
+  <title>Advice Generator App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+  <header class="header">
+    <h1>
+      Generate <span id="serif-style">Random Advice</span> With a Click
+    </h1>
+    <p>Powered by the Advice Slip API.</p>
+  </header>
+
+  <!-- Advice Container -->
+  <section>
+    <div class="container">
+      <div class="advice-box" id="advice-box">
+        <h2> Advice #<span id="advice-id"><!-- Advice id --></span></h2>
+        <p id="advice-text">"<!-- Advice text -->"</p>
+      </div>
+      <div class="divider">
+        <img class="divder-desktop" src="./images/pattern-divider-desktop.svg" alt="Divider">
+        <img class="divider-mobile" src="./images/pattern-divider-mobile.svg" alt="">
+      </div>
+      <button class="button" id="button">
+        <img src="./images/icon-dice.svg" alt="Dice Icon">
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/samthewebguy" target ="_blank">SAMTHEWEBGUY</a>.
+    </p>
+  </footer>
+
+  <!-- Script -->
+
+  <script src="script.js"></script>
+</body>
+</html>
